@@ -1,0 +1,87 @@
+@font-face {
+  font-family: typewriter-custom;
+  src: url(moms_typewriter/Mom差___.ttf);
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.resume-body {
+  max-width: 850px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px dashed grey;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.name h1 {
+  font-size: xx-large;
+}
+
+.all-educational-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.name-and-year {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.remarks,
+.designation {
+  font-size: small;
+  line-height: 16px;
+}
+
+.all-professional-experiences-details,
+.all-projects-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.all-achievements-details,
+.all-skills-details {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: small;
+}
+
+.all-volunteering-details ul {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: small;
+}
+
+.organisation-name {
+  font-size: 14px;
+  margin-bottom: 3px;
+  text-decoration: underline;
+}
