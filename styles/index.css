@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.parent-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/images/bg.jpeg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-my-cv {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 900;
+  z-index: 10;
+  user-select: none;
+}
+
+.view-my-cv:hover {
+  scale: 105%;
+  transition-duration: 200ms;
+  cursor: pointer;
+  background-color: greenyellow;
+  transition-duration: 300ms;
+}
+
+.profile-card {
+  width: 400px;
+  height: 600px;
+  background: url(/images/bganimated.gif);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cover-photo {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black),
+    url(/images/cover.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile-photo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(/images/me.jpeg);
+  background-position: center;
+  background-size: contain;
+  border: 1px solid white;
+}
+
+.description {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+}
+.second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-section .socials {
+  position: absolute;
+  bottom: 0;
+  margin: 50px 0;
+}
+
+.socials div {
+  text-align: center;
+}
+
+.socials div:first-child {
+  font-size: small;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.bio,
+.designation {
+  text-align: center;
+  width: 80%;
+}
+
+a {
+  color: greenyellow;
+}
+
+a:visited {
+  color: aqua;
+}
+
+.divider {
+  font-size: small;
+  margin: 5px 0;
+  font-weight: 900;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.828);
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: white;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.box div {
+  font-weight: 900;
+  font-size: x-large;
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+}
+
+.box div:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+  user-select: none;
+}
+
+.box div a,
+.box div a:visited {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-card {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+  }
+
+  .cover-photo {
+    border-radius: 0;
+  }
+
+  .divider {
+    margin: 15px 0;
+  }
+}
